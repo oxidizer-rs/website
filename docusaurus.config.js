@@ -54,12 +54,12 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} oxidizer-rs`,
+      copyright: `Copyright © ${new Date().getFullYear()} Oxidizer`,
     },
-    // googleAnalytics: {
-    //   trackingID: '',
-    //   anonymizeIP: true, // Should IPs be anonymized?
-    // },
+    googleAnalytics: {
+      trackingID: 'UA-175460494-1',
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
     // algolia: {
     //   apiKey: '',
     //   indexName: 'oxidizer-rs',
@@ -76,13 +76,13 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/oxidizer-rs/oxidizer/edit/master/",
+            "https://github.com/oxidizer-rs/website/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/oxidizer-rs/oxidizer/edit/master/",
+            "https://github.com/oxidizer-rs/website/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
