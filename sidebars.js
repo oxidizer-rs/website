@@ -9,11 +9,11 @@ module.exports = {
       label: "Examples",
       collapsed: false,
       items: [
-        "examples/entity",
+        "examples/entity-basic",
+        "examples/entity-complex",
         "examples/insert-update",
         "examples/select",
         "examples/delete",
-        "examples/complex-query",
       ],
     },
     {

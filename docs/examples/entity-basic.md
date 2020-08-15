@@ -1,7 +1,7 @@
 ---
-id: entity
-title: Entity
-sidebar_label: Entity
+id: entity-basic
+title: Entity (Basic)
+sidebar_label: Entity (Basic)
 ---
 
 ```rust

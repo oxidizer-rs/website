@@ -1,7 +1,7 @@
 ---
-id: complex-query
-title: Complex Query
-sidebar_label: Complex Query
+id: entity-complex
+title: Entity (Complex)
+sidebar_label: Entity (Complex)
 ---
 
 ```rust
