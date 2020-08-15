@@ -10,7 +10,10 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts}\"",
+    "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,ts}\"",
+    "prettier-docs": "prettier --config .prettierrc --write \"**/*.md\""
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.61",
@@ -36,7 +39,8 @@
     ]
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^3.2.0"
+    "cz-conventional-changelog": "^3.2.0",
+    "prettier": "2.0.5"
   },
   "config": {
     "commitizen": {

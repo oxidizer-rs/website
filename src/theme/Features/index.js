@@ -5,29 +5,30 @@ import styles from "./styles.module.scss";
 
 const data = [
   {
-    title: <>Preventing Runtime Errors</>,
+    title: <>Dead simple, but powerful</>,
     description: (
       <>
-        Eliminate the possibility of incorrect database interactions at compile
-        time.
+        Oxidizer is a Rust ORM based on tokio-postgres and refinery. Two
+        powerful libraries that give Oxidizer the performance and reliability to
+        perform database interactions.
       </>
     ),
   },
   {
-    title: <>Built for Performance</>,
+    title: <>Asynchronous from the ground up</>,
     description: (
       <>
-        A high level query builder that lets you think about your problems in
-        Rust, not SQL.
+        By using tokio and tokio-postgres, all the database operations are
+        efficiently handled by tokio at runtime.
       </>
     ),
   },
   {
-    title: <>Productive and Extensible</>,
+    title: <>Relations</>,
     description: (
       <>
-        Write reusable code and think in terms of your problem domain and not
-        SQL.
+        Oxidizer macros generate code to access relations between entities with
+        ease. Forward and reverse relations are supported.
       </>
     ),
   },
@@ -35,7 +36,7 @@ const data = [
 
 function Feature({ title, description }) {
   return (
-    <div className={clsx("col col--4", styles.feature)}>
+    <div className={clsx("col col--12", styles.feature)}>
       <div className="item">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -47,8 +48,8 @@ function Feature({ title, description }) {
 function Features() {
   return (
     <>
-      {data && data.length > 0 && (
-        <section id="features" className={styles.features}>
+      {data && data.length && (
+        <div id="features" className={styles.features}>
           <div className="container">
             <div className="row">
               {data.map((props, idx) => (
@@ -56,7 +57,7 @@ function Features() {
               ))}
             </div>
           </div>
-        </section>
+        </div>
       )}
     </>
   );

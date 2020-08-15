@@ -23,7 +23,7 @@ module.exports = {
       },
     },
     prism: {
-      theme: require("prism-react-renderer/themes/dracula"),
+      theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
     },
     navbar: {
@@ -57,7 +57,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Oxidizer`,
     },
     googleAnalytics: {
-      trackingID: 'UA-175460494-1',
+      trackingID: "UA-175460494-1",
       anonymizeIP: true, // Should IPs be anonymized?
     },
     // algolia: {
@@ -75,14 +75,12 @@ module.exports = {
           homePageId: "getting-started",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/oxidizer-rs/website/edit/master/",
+          editUrl: "https://github.com/oxidizer-rs/website/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/oxidizer-rs/website/edit/master/",
+          editUrl: "https://github.com/oxidizer-rs/website/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),

@@ -1,6 +1,12 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  margin-top: 4rem;
   width: 100%;
+
+  .feature {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
 }

@@ -6,9 +6,19 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Methods",
+      label: "Examples",
       collapsed: false,
-      items: [],
+      items: [
+        "examples/entity",
+        "examples/insert-update",
+        "examples/select",
+        "examples/delete",
+        "examples/complex-query",
+      ],
+    },
+    {
+      type: "doc",
+      id: "contributing",
     },
   ],
 };
