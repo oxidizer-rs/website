@@ -1,15 +1,6 @@
 const snippets = [
   {
-    label: "Basic Entity",
-    code: `#[derive(Entity, Default)]
-pub struct MyEntity {
-    #[primary_key]
-    id: i32,
-    name: String,
-}`,
-  },
-  {
-    label: "Complex Entity",
+    label: "Entity",
     code: `#[derive(Entity, Default)]
 #[entity(table_name = "my_table_name")] // optional
 #[index(name = "myindex", columns = "name, datetime", unique)] // optional
