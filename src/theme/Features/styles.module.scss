@@ -5,10 +5,10 @@
   padding-bottom: 3rem !important;
 
   .feature {
-    padding-right: 2rem;
+    margin-bottom: 2rem;
 
-    &:not(:last-child) {
-      margin-bottom: 2rem;
+    @media screen and (min-width: 576px) {
+      padding-right: 5rem;
     }
 
     .header {

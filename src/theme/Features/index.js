@@ -69,7 +69,7 @@ function Features() {
         <section id="features" className={styles.features}>
           <div className="container">
             <div className="row">
-              <div className="col col--10 col--offset-1">
+              <div className="col col--11 col--offset-1">
                 <div className="row">
                   {data.map((props, idx) => (
                     <Feature key={idx} {...props} />
