@@ -8,5 +8,23 @@
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        color: var(--ifm-color-primary);
+      }
+
+      .title {
+        margin-bottom: 0;
+      }
+    }
   }
 }

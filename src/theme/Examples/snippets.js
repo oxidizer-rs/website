@@ -4,8 +4,6 @@ const snippets = [
     code: `#[derive(Entity, Default)]
 #[entity(table_name = "my_table_name")] // optional
 #[index(name = "myindex", columns = "name, datetime", unique)] // optional
-#[has_many(model = "OtherEntity", field = "my_entity_id")]
-#[has_many(model = "OtherEntityManyToMany", field = "my_entity_id", through = "MyEntityM2M")] // optional
 pub struct MyEntity {
     #[primary_key]
     id: i32,
@@ -43,7 +41,6 @@ async fn main() {
     let uri = "postgres://postgres:postgres@localhost/postgres";
     let db = DB::connect(&uri, 50, None).await.unwrap();
 
-    // If it has value in the primary key it will update, otherwise it will save. The result tells which operation was performed.
     let creating = entity.save(&db).await.unwrap();
 }`,
   },

@@ -35,6 +35,11 @@ module.exports = {
       },
       items: [
         {
+          href: "https://crates.io/crates/oxidizer",
+          label: "Crate",
+          position: "left",
+        },
+        {
           to: "docs",
           activeBasePath: "docs",
           label: "Docs",
@@ -42,13 +47,13 @@ module.exports = {
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: "https://crates.io/crates/oxidizer",
-          label: "Crate",
+          href: "https://github.com/oxidizer-rs/oxidizer",
+          label: "GitHub",
           position: "right",
         },
         {
-          href: "https://github.com/oxidizer-rs/oxidizer",
-          label: "GitHub",
+          href: "https://gitter.im/oxidizer-rs",
+          label: "Gitter",
           position: "right",
         },
       ],

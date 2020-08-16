@@ -1,10 +1,13 @@
 import React from "react";
 import clsx from "clsx";
+import { FiDatabase, FiPackage, FiZap } from "react-icons/fi";
 
 import styles from "./styles.module.scss";
 
+const size = 24;
 const data = [
   {
+    icon: <FiPackage size={size} />,
     title: <>Dead simple, but powerful</>,
     description: (
       <>
@@ -15,6 +18,7 @@ const data = [
     ),
   },
   {
+    icon: <FiZap size={size} />,
     title: <>Asynchronous from the ground up</>,
     description: (
       <>
@@ -24,6 +28,7 @@ const data = [
     ),
   },
   {
+    icon: <FiDatabase size={size} />,
     title: <>Relations</>,
     description: (
       <>
@@ -34,11 +39,14 @@ const data = [
   },
 ];
 
-function Feature({ title, description }) {
+function Feature({ icon, title, description }) {
   return (
     <div className={clsx("col col--12", styles.feature)}>
       <div className="item">
-        <h3>{title}</h3>
+        <div className={styles.header}>
+          {icon && <div className={styles.icon}>{icon}</div>}
+          <h3 className={styles.title}>{title}</h3>
+        </div>
         <p>{description}</p>
       </div>
     </div>
