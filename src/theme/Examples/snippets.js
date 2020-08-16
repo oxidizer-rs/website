@@ -18,10 +18,7 @@ pub struct MyEntity {
 
     boolean: bool,
 
-    datetime: Option<DateTime<Utc>>,
-
-    #[relation(model = "RelatedEntity", key = "id")]
-    related_entity_id: i32,
+    datetime: Option<DateTime<Utc>>
 }`,
   },
   {
