@@ -5,9 +5,16 @@
   padding-bottom: 3rem !important;
 
   .feature {
-    margin-bottom: 2rem;
+    p {
+      margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
 
     @media screen and (min-width: 576px) {
+      margin-bottom: 3rem;
       padding-right: 5rem;
     }
 
