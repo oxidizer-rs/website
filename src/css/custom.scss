@@ -17,7 +17,7 @@
   --ifm-color-primary-lighter: #ff8b74;
   --ifm-color-primary-lightest: #ffb4a5;
   --ifm-card-background-color: var(--ifm-background-color);
-  --ifm-footer-background-color: var(--ifm-background-color);
+  --ifm-footer-background-color: var(--ifm-background-surface-color);
 }
 
 html[data-theme="dark"] {

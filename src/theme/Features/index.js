@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import { FiDatabase, FiPackage, FiZap } from "react-icons/fi";
+import { FiCoffee, FiDatabase, FiPackage, FiZap } from "react-icons/fi";
 
 import styles from "./styles.module.scss";
 
@@ -12,8 +12,8 @@ const data = [
     description: (
       <>
         Oxidizer is a Rust ORM based on tokio-postgres and refinery. Two
-        powerful libraries that give Oxidizer the performance and reliability to
-        perform database interactions.
+        powerful libraries that give performance and reliability to perform
+        database interactions.
       </>
     ),
   },
@@ -32,8 +32,17 @@ const data = [
     title: <>Relations</>,
     description: (
       <>
-        Oxidizer macros generate code to access relations between entities with
-        ease. Forward and reverse relations are supported.
+        Oxidizer macros generate code to access forward and reverse relations
+        between entities with ease.
+      </>
+    ),
+  },
+  {
+    icon: <FiCoffee size={size} />,
+    title: <>Productive and Extensible</>,
+    description: (
+      <>
+        Write reusable code and think in terms of your problem domain, not SQL.
       </>
     ),
   },
@@ -41,7 +50,7 @@ const data = [
 
 function Feature({ icon, title, description }) {
   return (
-    <div className={clsx("col col--12", styles.feature)}>
+    <div className={clsx("col col--6", styles.feature)}>
       <div className="item">
         <div className={styles.header}>
           {icon && <div className={styles.icon}>{icon}</div>}
@@ -57,15 +66,19 @@ function Features() {
   return (
     <>
       {data && data.length && (
-        <div id="features" className={styles.features}>
+        <section id="features" className={styles.features}>
           <div className="container">
             <div className="row">
-              {data.map((props, idx) => (
-                <Feature key={idx} {...props} />
-              ))}
+              <div className="col col--10 col--offset-1">
+                <div className="row">
+                  {data.map((props, idx) => (
+                    <Feature key={idx} {...props} />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       )}
     </>
   );

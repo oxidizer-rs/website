@@ -85,7 +85,7 @@ function renderTable() {
 function Comparison() {
   return (
     <>
-      <div id="comparison" className={styles.comparison}>
+      <section id="comparison" className={styles.comparison}>
         <div className="container">
           <div className="row">
             <div className="col col--4 col--offset-1">
@@ -98,7 +98,7 @@ function Comparison() {
             <div className="col col--6 col--offset-1">{renderTable()}</div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

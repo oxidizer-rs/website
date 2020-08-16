@@ -1,5 +1,4 @@
 import React from "react";
-import clsx from "clsx";
 import { IconContext } from "react-icons";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -26,18 +25,9 @@ function Home() {
         <Hero />
 
         <main className={styles.main}>
-          <div className="container">
-            <div className="row">
-              <div className="col col--5">
-                <Features />
-              </div>
-              <div className="col col--7">
-                <Examples />
-              </div>
-            </div>
-          </div>
-
+          <Features />
           <Comparison />
+          <Examples />
         </main>
       </Layout>
     </IconContext.Provider>
