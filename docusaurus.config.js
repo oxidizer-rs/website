@@ -67,7 +67,7 @@ module.exports = {
       anonymizeIP: true, // Should IPs be anonymized?
     },
     algolia: {
-      apiKey: "26face2a924002cf079445074850d4e7",
+      apiKey: "595d0ce3168237df0023d3925c8a3675",
       indexName: "oxidizer",
     },
   },
