@@ -26,6 +26,7 @@ module.exports = {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
     },
+    image: "img/oxidizer.png",
     navbar: {
       hideOnScroll: false,
       title: "Oxidizer",
@@ -65,10 +66,10 @@ module.exports = {
       trackingID: "UA-175460494-1",
       anonymizeIP: true, // Should IPs be anonymized?
     },
-    // algolia: {
-    //   apiKey: '',
-    //   indexName: 'oxidizer-rs',
-    // },
+    algolia: {
+      apiKey: "26face2a924002cf079445074850d4e7",
+      indexName: "oxidizer",
+    },
   },
   plugins: ["docusaurus-plugin-sass", "@docusaurus/plugin-ideal-image"],
   presets: [
