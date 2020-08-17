@@ -54,7 +54,7 @@ function Feature({ icon, title, description }) {
       <div className="item">
         <div className={styles.header}>
           {icon && <div className={styles.icon}>{icon}</div>}
-          <h3 className={styles.title}>{title}</h3>
+          <h2 className={styles.title}>{title}</h2>
         </div>
         <p>{description}</p>
       </div>
