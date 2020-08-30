@@ -8,8 +8,8 @@ sidebar_label: Entity (Complex)
 #[derive(Entity, Default)]
 #[entity(table_name = "my_table_name")] // optional
 #[index(name = "myindex", columns = "name, datetime", unique)] // optional
-#[has_many(model = "OtherEntity", field = "my_entity_id")]
-#[has_many(model = "OtherEntityManyToMany", field = "my_entity_id", through = "MyEntityM2M")] // optional
+#[has_many(model = "OtherEntity", field = "entity_id")]
+#[has_many(model = "OtherEntityM2M", field = "entity_id", through = "MyEntityM2M")] // optional
 pub struct MyEntity {
     #[primary_key]
     id: i32,

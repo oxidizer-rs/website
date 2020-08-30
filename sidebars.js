@@ -14,6 +14,7 @@ module.exports = {
         "examples/insert-update",
         "examples/select",
         "examples/delete",
+        "examples/raw",
       ],
     },
     {
