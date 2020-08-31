@@ -18,7 +18,7 @@ async fn main() {
     entity.name = "Hello world"
 
     let uri = "postgres://postgres:postgres@localhost/postgres";
-    let db = DB::connect(&uri, 50, None).await.unwrap();
+    let db = Db::connect(&uri, 50, None).await.unwrap();
 
     // If it has value in the primary key it will update, otherwise it will save.
     // The result tells which operation was performed.

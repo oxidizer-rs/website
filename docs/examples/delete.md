@@ -15,7 +15,7 @@ pub struct MyEntity {
 #[tokio::main]
 async fn main() {
     let uri = "postgres://postgres:postgres@localhost/postgres";
-    let db = DB::connect(&uri, 50, None).await.unwrap();
+    let db = Db::connect(&uri, 50, None).await.unwrap();
 
     let id = 1;
     let mut result = MyEntity::first(&db, "id = $1", &[&id]).await.unwrap();
