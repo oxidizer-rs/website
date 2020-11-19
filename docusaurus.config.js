@@ -33,6 +33,7 @@ module.exports = {
       logo: {
         alt: "Oxidizer Logo",
         src: "img/logo.svg",
+        srcDark: "img/logo.svg",
       },
       items: [
         {
