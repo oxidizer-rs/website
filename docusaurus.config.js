@@ -4,6 +4,7 @@ module.exports = {
   url: "https://oxidizer-rs.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: 'warn',
   favicon: "img/favicon.ico",
   organizationName: "oxidizer-rs", // Usually your GitHub org/user name.
   projectName: "oxidizer-rs.github.io", // Usually your repo name.
