@@ -1410,7 +1410,7 @@
     "@docusaurus/plugin-content-pages" "2.0.0-alpha.69"
     "@docusaurus/types" "2.0.0-alpha.69"
 
-"@docusaurus/theme-search-algolia@2.0.0-alpha.69", "@docusaurus/theme-search-algolia@^2.0.0-alpha.68":
+"@docusaurus/theme-search-algolia@2.0.0-alpha.69", "@docusaurus/theme-search-algolia@^2.0.0-alpha.69":
   version "2.0.0-alpha.69"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.0.0-alpha.69.tgz#955da97fd3052118fee1b5ffa1abfa33043fd67a"
   integrity sha512-hPg54EwZudgqjs7D6QbWMbG3XmI10XtcqED9VMg6R3LPBG3317UhtuEGa1jJrF6hDN/HHbzWZOQ00LLBHpf9+Q==
