@@ -4,10 +4,10 @@ module.exports = {
   url: "https://oxidizer-rs.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "oxidizer-rs", // Usually your GitHub org/user name.
-  projectName: "oxidizer-rs.github.io", // Usually your repo name.
+  organizationName: "oxidizer-rs",
+  projectName: "oxidizer-rs.github.io",
   themeConfig: {
     colorMode: {
       disableSwitch: false,
@@ -48,7 +48,6 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-        // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: "https://github.com/oxidizer-rs/oxidizer",
           label: "GitHub",
@@ -66,7 +65,7 @@ module.exports = {
     },
     googleAnalytics: {
       trackingID: "UA-175460494-1",
-      anonymizeIP: true, // Should IPs be anonymized?
+      anonymizeIP: true,
     },
     algolia: {
       apiKey: "595d0ce3168237df0023d3925c8a3675",
@@ -79,14 +78,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/oxidizer-rs/website/edit/main/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
           editUrl: "https://github.com/oxidizer-rs/website/edit/main/",
         },
         theme: {
