@@ -14,7 +14,6 @@ function renderTabs() {
       values={snippets.map((props, idx) => {
         return { label: props.label, value: props.label };
       })}
-      className={styles.tabs}
     >
       {snippets.map((props, idx) => (
         <TabItem key={idx} value={props.label}>
@@ -29,7 +28,7 @@ function Examples() {
   return (
     <>
       {snippets && snippets.length && (
-        <section id="examples" className={styles.examples}>
+        <section id="examples">
           <div className="container">
             <div className="row">
               <div className="col col--10 col--offset-1">
