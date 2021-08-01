@@ -1,7 +1,7 @@
 {
   "index_name": "oxidizer",
-  "start_urls": ["https://oxidizer.rs/docs/"],
-  "sitemap_urls": ["https://oxidizer.rs/sitemap.xml"],
+  "start_urls": ["https://oxidizer-rs.github.io/docs/"],
+  "sitemap_urls": ["https://oxidizer-rs.github.io/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": [],
   "selectors": {
