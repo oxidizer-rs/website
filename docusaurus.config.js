@@ -63,10 +63,6 @@ module.exports = {
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Oxidizer`,
     },
-    googleAnalytics: {
-      trackingID: "UA-175460494-1",
-      anonymizeIP: true,
-    },
     algolia: {
       apiKey: "595d0ce3168237df0023d3925c8a3675",
       indexName: "oxidizer",
@@ -83,6 +79,10 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
+        },
+        googleAnalytics: {
+          trackingID: "UA-175460494-1",
+          anonymizeIP: true,
         },
       },
     ],
