@@ -12,16 +12,6 @@ module.exports = {
     colorMode: {
       disableSwitch: false,
       respectPrefersColorScheme: true,
-      switchConfig: {
-        darkIcon: "🌙",
-        darkIconStyle: {
-          marginLeft: "2px",
-        },
-        lightIcon: "☀️",
-        lightIconStyle: {
-          marginLeft: "1px",
-        },
-      },
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
@@ -64,7 +54,8 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Oxidizer`,
     },
     algolia: {
-      apiKey: "595d0ce3168237df0023d3925c8a3675",
+      appId: "HVVHM9Y1FS",
+      apiKey: "69087ce0fa98413a71a7a4ab4ad31f7f",
       indexName: "oxidizer",
     },
   },
