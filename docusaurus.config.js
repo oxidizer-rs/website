@@ -57,7 +57,7 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} Oxidizer`,
+      copyright: `Copyright © 2020 Oxidizer`,
     },
   },
   plugins: ["docusaurus-plugin-sass", "@docusaurus/plugin-ideal-image"],
