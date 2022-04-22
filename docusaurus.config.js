@@ -53,11 +53,6 @@ module.exports = {
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Oxidizer`,
     },
-    algolia: {
-      appId: "HVVHM9Y1FS",
-      apiKey: "69087ce0fa98413a71a7a4ab4ad31f7f",
-      indexName: "oxidizer",
-    },
   },
   plugins: ["docusaurus-plugin-sass", "@docusaurus/plugin-ideal-image"],
   presets: [
