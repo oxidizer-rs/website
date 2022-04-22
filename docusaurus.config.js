@@ -9,6 +9,12 @@ module.exports = {
   organizationName: "oxidizer-rs",
   projectName: "oxidizer-rs.github.io",
   themeConfig: {
+    announcementBar: {
+      id: "archived",
+      content:
+        "Unfortunately, we have not been able to allocate time and effort to push Oxidizer forward. The code will remain available in GitHub in archived mode and everyone is welcome to fork and work on features as they wish.",
+      isCloseable: false,
+    },
     colorMode: {
       disableSwitch: false,
       respectPrefersColorScheme: true,
@@ -51,7 +57,7 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} Oxidizer`,
+      copyright: `Copyright © 2020 Oxidizer`,
     },
   },
   plugins: ["docusaurus-plugin-sass", "@docusaurus/plugin-ideal-image"],
