@@ -26,23 +26,19 @@ const renderTabs = () => {
 
 const Examples = () => {
   return (
-    <>
-      {snippets?.length && (
-        <section id="examples">
-          <div className="container">
-            <div className="row">
-              <div className="col col--10 col--offset-1">
-                <Headline
-                  category="Examples"
-                  title="Quick snippets to get started with Oxidizer"
-                />
-                {renderTabs()}
-              </div>
-            </div>
+    <section id="examples">
+      <div className="container">
+        <div className="row">
+          <div className="col col--10 col--offset-1">
+            <Headline
+              category="Examples"
+              title="Quick snippets to get started with Oxidizer"
+            />
+            {renderTabs()}
           </div>
-        </section>
-      )}
-    </>
+        </div>
+      </div>
+    </section>
   )
 }
 

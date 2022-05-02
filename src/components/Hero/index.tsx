@@ -8,7 +8,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 
 import styles from "./styles.module.scss"
 
-function Hero() {
+const Hero = () => {
   const context = useDocusaurusContext()
   const { siteConfig } = context
   const { tagline, title } = siteConfig

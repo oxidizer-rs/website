@@ -9,7 +9,7 @@ interface HeadlineProps {
   title?: string
 }
 
-function Headline({ category, offset = 0, subtitle, title }: HeadlineProps) {
+const Headline = ({ category, offset = 0, subtitle, title }: HeadlineProps) => {
   return (
     <div className="row">
       <div className={`col col--${12 - offset} col--offset-${offset}`}>
