@@ -5,8 +5,14 @@ import { FiCoffee, FiDatabase, FiPackage, FiZap } from "react-icons/fi"
 
 import styles from "./styles.module.scss"
 
+interface Feature {
+  icon: ReactNode
+  title: string
+  description: string
+}
+
 const size = 24
-const data = [
+const data: Feature[] = [
   {
     icon: <FiPackage size={size} />,
     title: "Dead simple, but powerful",
@@ -33,13 +39,7 @@ const data = [
   },
 ]
 
-interface FeatureProps {
-  icon: ReactNode
-  title: string
-  description: string
-}
-
-const Feature = ({ icon, title, description }: FeatureProps) => {
+const Feature = ({ icon, title, description }: Feature) => {
   return (
     <div className={clsx("col col--6", styles.feature)}>
       <div className="item">
@@ -55,23 +55,19 @@ const Feature = ({ icon, title, description }: FeatureProps) => {
 
 const Features = () => {
   return (
-    <>
-      {data?.length > 0 && (
-        <section id="features" className={styles.features}>
-          <div className="container">
+    <section id="features" className={styles.features}>
+      <div className="container">
+        <div className="row">
+          <div className="col col--11 col--offset-1">
             <div className="row">
-              <div className="col col--11 col--offset-1">
-                <div className="row">
-                  {data.map((props, idx) => (
-                    <Feature key={idx} {...props} />
-                  ))}
-                </div>
-              </div>
+              {data.map((props, idx) => (
+                <Feature key={idx} {...props} />
+              ))}
             </div>
           </div>
-        </section>
-      )}
-    </>
+        </div>
+      </div>
+    </section>
   )
 }
 

@@ -86,22 +86,20 @@ const renderTable = () => {
 
 const Comparison = () => {
   return (
-    <>
-      <section id="comparison" className={styles.comparison}>
-        <div className="container">
-          <div className="row">
-            <div className="col col--4 col--offset-1">
-              <Headline
-                category="Comparison"
-                title="How does Oxidizer compare to other popular options?"
-                subtitle="Diesel and RustORM are other great ORM options for Rust. Here are the three crates compared."
-              />
-            </div>
-            <div className="col col--6 col--offset-1">{renderTable()}</div>
+    <section id="comparison" className={styles.comparison}>
+      <div className="container">
+        <div className="row">
+          <div className="col col--4 col--offset-1">
+            <Headline
+              category="Comparison"
+              title="How does Oxidizer compare to other popular options?"
+              subtitle="Diesel and RustORM are other great ORM options for Rust. Here are the three crates compared."
+            />
           </div>
+          <div className="col col--6 col--offset-1">{renderTable()}</div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 
