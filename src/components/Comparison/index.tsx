@@ -1,8 +1,10 @@
-import React from "react";
-import { FiCheck, FiX } from "react-icons/fi";
+import React from "react"
 
-import Headline from "@theme/Headline";
-import styles from "./styles.module.scss";
+import { FiCheck, FiX } from "react-icons/fi"
+
+import Headline from "@site/src/components/Headline"
+
+import styles from "./styles.module.scss"
 
 const data = [
   {
@@ -20,7 +22,7 @@ const data = [
     name: "RustORM",
     highlighted: false,
   },
-];
+]
 
 const features = [
   {
@@ -43,10 +45,10 @@ const features = [
     name: "SQLite",
     values: { oxidizer: false, diesel: true, rustorm: true },
   },
-];
+]
 
-function renderTable() {
-  const size = 24;
+const renderTable = () => {
+  const size = 24
   return (
     <table className={styles.table}>
       <thead>
@@ -79,10 +81,10 @@ function renderTable() {
         ))}
       </tbody>
     </table>
-  );
+  )
 }
 
-function Comparison() {
+const Comparison = () => {
   return (
     <>
       <section id="comparison" className={styles.comparison}>
@@ -100,7 +102,7 @@ function Comparison() {
         </div>
       </section>
     </>
-  );
+  )
 }
 
-export default Comparison;
+export default Comparison

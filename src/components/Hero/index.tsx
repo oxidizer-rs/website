@@ -1,14 +1,17 @@
-import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import React from "react"
 
-import styles from "./styles.module.scss";
+import clsx from "clsx"
+
+import Link from "@docusaurus/Link"
+import useBaseUrl from "@docusaurus/useBaseUrl"
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
+
+import styles from "./styles.module.scss"
 
 function Hero() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+  const context = useDocusaurusContext()
+  const { siteConfig } = context
+  const { tagline, title } = siteConfig
 
   return (
     <header id="hero" className={clsx("hero", styles.banner)}>
@@ -19,10 +22,8 @@ function Hero() {
           className={styles.logo}
         />
 
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className={clsx("hero__subtitle", styles.subtitle)}>
-          {siteConfig.tagline}
-        </p>
+        <h1 className="hero__title">{title}</h1>
+        <p className={clsx("hero__subtitle", styles.subtitle)}>{tagline}</p>
 
         <div className={styles.buttons}>
           <Link
@@ -37,7 +38,7 @@ function Hero() {
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

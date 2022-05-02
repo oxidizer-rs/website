@@ -78,6 +78,6 @@ async fn main() {
     let deleted: bool = result.delete(&db).await.unwrap();
 }`,
   },
-];
+]
 
-export default snippets;
+export default snippets
