@@ -1,18 +1,18 @@
-import React from "react";
-import CodeSnippet from "@theme/CodeSnippet";
-import Tabs from "@theme/Tabs";
-import TabItem from "@theme/TabItem";
+import React from "react"
 
-import Headline from "@theme/Headline";
-import snippets from "./snippets";
-import styles from "./styles.module.scss";
+import CodeSnippet from "@site/src/components/CodeSnippet"
+import Headline from "@site/src/components/Headline"
+import TabItem from "@theme/TabItem"
+import Tabs from "@theme/Tabs"
 
-function renderTabs() {
+import snippets from "./snippets"
+
+const renderTabs = () => {
   return (
     <Tabs
       defaultValue={snippets[0].label}
       values={snippets.map((props, idx) => {
-        return { label: props.label, value: props.label };
+        return { label: props.label, value: props.label }
       })}
     >
       {snippets.map((props, idx) => (
@@ -21,13 +21,13 @@ function renderTabs() {
         </TabItem>
       ))}
     </Tabs>
-  );
+  )
 }
 
-function Examples() {
+const Examples = () => {
   return (
     <>
-      {snippets && snippets.length && (
+      {snippets?.length && (
         <section id="examples">
           <div className="container">
             <div className="row">
@@ -43,7 +43,7 @@ function Examples() {
         </section>
       )}
     </>
-  );
+  )
 }
 
-export default Examples;
+export default Examples

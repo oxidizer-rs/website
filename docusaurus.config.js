@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: "Oxidizer",
   tagline: "A Rust ORM based on tokio-postgres and refinery",
   url: "https://oxidizer-rs.github.io",
@@ -9,6 +10,7 @@ module.exports = {
   organizationName: "oxidizer-rs",
   projectName: "oxidizer-rs.github.io",
   themeConfig: {
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     announcementBar: {
       id: "archived",
       content:
@@ -79,4 +81,6 @@ module.exports = {
       },
     ],
   ],
-};
+}
+
+module.exports = config
